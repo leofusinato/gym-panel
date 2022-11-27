@@ -8,12 +8,18 @@ export function NavBar() {
     <Navbar>
       <Navbar.Brand>GYM-PANEL</Navbar.Brand>
       <Nav>
+        <Nav.Item>
+          <Link to={"add-sale"}>Nova venda</Link>
+        </Nav.Item>
         <Nav.Menu title="Cadastros">
           <Link to={"add-aluno"}>
             <Nav.Item>Alunos</Nav.Item>
           </Link>
           <Link to={"add-profissional"}>
-            <Nav.Item>Profissional</Nav.Item>
+            <Nav.Item>Profissionais</Nav.Item>
+          </Link>
+          <Link to={"add-item"}>
+            <Nav.Item>Itens</Nav.Item>
           </Link>
         </Nav.Menu>
         <Nav.Menu title="Consultar">
@@ -22,6 +28,9 @@ export function NavBar() {
           </Link>
           <Link to={"list-profissional"}>
             <Nav.Item>Profissionais</Nav.Item>
+          </Link>
+          <Link to={"list-item"}>
+            <Nav.Item>Itens</Nav.Item>
           </Link>
         </Nav.Menu>
       </Nav>

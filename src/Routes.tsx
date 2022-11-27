@@ -8,6 +8,9 @@ import { AddProfessional } from "./pages/AddProfessional";
 import { AddStudent } from "./pages/AddStudent";
 import { ListStudent } from "./pages/ListStudent";
 import { ListProfessional } from "./pages/ListProfessional";
+import { AddItem } from "./pages/AddItem";
+import { ListItem } from "./pages/ListItem";
+import { AddSale } from "./pages/AddSale";
 
 const Container = styled.div`
   padding: 24px;
@@ -23,6 +26,9 @@ export function Routes() {
         <Route component={ListStudent} path="/list-alunos" exact />
         <Route component={AddProfessional} path="/add-profissional" exact />
         <Route component={ListProfessional} path="/list-profissional" exact />
+        <Route component={AddItem} path="/add-item" exact />
+        <Route component={ListItem} path="/list-item" exact />
+        <Route component={AddSale} path="/add-sale" exact />
       </Container>
     </BrowserRouter>
   );

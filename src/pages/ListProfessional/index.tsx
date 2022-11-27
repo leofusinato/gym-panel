@@ -86,7 +86,7 @@ export function ListProfessional() {
         </Column>
 
         <Column width={200}>
-          <HeaderCell>City</HeaderCell>
+          <HeaderCell>Cidade</HeaderCell>
           <Cell dataKey="city" />
         </Column>
 
