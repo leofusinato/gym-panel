@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Form, ButtonToolbar, Button, InputPicker } from "rsuite";
 import { Row } from "./styles";
 
-export function AddStudent() {
+export function AddProfessional() {
   return (
     <div>
       <Form layout="inline">
@@ -89,39 +89,10 @@ export function AddStudent() {
         </Form.Group>
       </Form>
       <Form layout="inline">
-        <Row>
-          <label>Plano de saúde?</label>
-          <InputPicker
-            placeholder="Selecione"
-            data={["Sim", "Não"].map((item) => ({
-              label: item,
-              value: item,
-            }))}
-            style={{ marginLeft: 16, width: 224 }}
-          />
-          <label style={{ marginLeft: 16 }}>Pratica outro esporte?</label>
-          <InputPicker
-            placeholder="Selecione"
-            data={["Sim", "Não"].map((item) => ({
-              label: item,
-              value: item,
-            }))}
-            style={{ marginLeft: 16, width: 224 }}
-          />
-        </Row>
-      </Form>
-      <Form layout="inline">
-        <Row>
-          <label>Por que faz academia?</label>
-          <InputPicker
-            placeholder="Selecione"
-            data={["Sim", "Não"].map((item) => ({
-              label: item,
-              value: item,
-            }))}
-            style={{ marginLeft: 16, width: 224 }}
-          />
-        </Row>
+        <Form.Group controlId="salario">
+          <Form.ControlLabel>Salário (R$)</Form.ControlLabel>
+          <Form.Control name="salario" type="number" />
+        </Form.Group>
       </Form>
       <Form>
         <Form.Group>

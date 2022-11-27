@@ -12,10 +12,16 @@ export function NavBar() {
           <Link to={"add-aluno"}>
             <Nav.Item>Alunos</Nav.Item>
           </Link>
+          <Link to={"add-profissional"}>
+            <Nav.Item>Profissional</Nav.Item>
+          </Link>
         </Nav.Menu>
         <Nav.Menu title="Consultar">
           <Link to={"list-alunos"}>
             <Nav.Item>Alunos</Nav.Item>
+          </Link>
+          <Link to={"list-profissional"}>
+            <Nav.Item>Profissionais</Nav.Item>
           </Link>
         </Nav.Menu>
       </Nav>
