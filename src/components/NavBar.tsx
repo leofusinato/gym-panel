@@ -29,6 +29,9 @@ export function NavBar() {
           <Link to={"list-profissional"}>
             <Nav.Item>Profissionais</Nav.Item>
           </Link>
+          <Link to={"list-vendas"}>
+            <Nav.Item>Vendas</Nav.Item>
+          </Link>
           <Link to={"list-item"}>
             <Nav.Item>Itens</Nav.Item>
           </Link>

@@ -11,6 +11,7 @@ import { ListProfessional } from "./pages/ListProfessional";
 import { AddItem } from "./pages/AddItem";
 import { ListItem } from "./pages/ListItem";
 import { AddSale } from "./pages/AddSale";
+import { ListSale } from "./pages/ListSale";
 
 const Container = styled.div`
   padding: 24px;
@@ -29,6 +30,7 @@ export function Routes() {
         <Route component={AddItem} path="/add-item" exact />
         <Route component={ListItem} path="/list-item" exact />
         <Route component={AddSale} path="/add-sale" exact />
+        <Route component={ListSale} path="/list-vendas" exact />
       </Container>
     </BrowserRouter>
   );

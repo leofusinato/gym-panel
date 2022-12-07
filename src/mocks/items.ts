@@ -1,5 +1,6 @@
 const createRowData = (rowIndex: any) => {
   const randomKey = Math.floor(Math.random() * 6);
+
   const names = [
     "Suplemento",
     "Creatina",
@@ -8,6 +9,7 @@ const createRowData = (rowIndex: any) => {
     "Camisa de treino",
     "Short de academia",
   ];
+
   const prices = ["30,00", "20,00", "10,00", "15,00", "35,00", "30,00"];
 
   return {
